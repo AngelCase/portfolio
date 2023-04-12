@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
 	nitro: {
 		output: {
-			publicDir: '../publish'
+			publicDir: '../docs'
 		}
 	},	
 	app: {
