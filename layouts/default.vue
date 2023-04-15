@@ -1,42 +1,24 @@
 <template>
   <div>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <nuxt-link to="/">top</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="skills">skills</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="works">works</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="contact">contact</nuxt-link>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <slot />
-  </div>
-</template>
-<!-- <template>
-  <div>
-    <header>
       <nav :class="$style.nav">
         <ul :class="$style.list">
           <li :class="$style.list__item">
             <nuxt-link :class="$style.list__item__link" to="/"> top </nuxt-link>
           </li>
           <li :class="$style.list__item">
-            <nuxt-link :class="$style.list__item__link" to="/gallery"
-              >gallery</nuxt-link
+            <nuxt-link :class="$style.list__item__link" to="/skills"
+              >skills</nuxt-link
             >
           </li>
           <li :class="$style.list__item">
-            <nuxt-link :class="$style.list__item__link" to="prompt">
-              prompt
+            <nuxt-link :class="$style.list__item__link" to="/works">
+              works
+            </nuxt-link>
+          </li>
+          <li :class="$style.list__item">
+            <nuxt-link :class="$style.list__item__link" to="/contact">
+              contact
             </nuxt-link>
           </li>
         </ul>
@@ -44,11 +26,11 @@
       <slot />
     </header>
   </div>
-</template> -->
+</template>
 
-<!-- <style lang="scss" module>
+<style lang="scss" module>
   .nav {
-    background-color: #333;
+    background-color: #eee;
   }
 
   .list {
@@ -60,7 +42,6 @@
       padding: 10px;
       font-size: large;
       list-style: none;
-      color: #eee;
       text-decoration: none;
 
       a {
@@ -69,12 +50,12 @@
 
       &__link,
       &__link:visited {
-        color: #eee;
+        color: #111;
       }
     }
 
     &__item:hover {
-      background-color: #111;
+      background-color: #dadada;
     }
   }
-</style> -->
+</style>
