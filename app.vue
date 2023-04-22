@@ -1,5 +1,7 @@
 <template>
   <div>
-    <p>This is my portfolio. The content does not yet exist.</p>
+    <nuxt-layout>
+      <nuxt-page />
+    </nuxt-layout>
   </div>
 </template>
