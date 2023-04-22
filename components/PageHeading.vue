@@ -8,6 +8,12 @@
 
 <template>
   <div>
-    <h1>{{ current }}</h1>
+    <h1 :class="$style.text">{{ current }}</h1>
   </div>
 </template>
+
+<style lang="scss" module>
+  .text {
+    text-align: center;
+  }
+</style>
