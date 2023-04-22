@@ -28,17 +28,18 @@ export function useScramble(props: ScrambleProps) {
 
       // 表示する文字列を更新
       current.value = targetpart + randomPart
-
-      // ターゲットを表示しきったら終了
-      if (target.length - 1 <= index) {
-        isRunning = false
-        clearInterval(timerId)
-        current.value = target
-      }
     }
 
     // 一定時間ごとに文字列を更新
     const timerId = setInterval(update, props.wait)
+
+    // 一定時間後に終了
+    const finishTime = props.wait * (target.length + 4) // 全表示し終わってもちょっと待つ
+    setTimeout(() => {
+      isRunning = false
+      clearInterval(timerId)
+      current.value = target
+    }, finishTime)
   }
 
   return { scramble, current }
