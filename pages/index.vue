@@ -1,5 +1,11 @@
+<script setup>
+  const text = 'This is my portfolio. The content does not yet exist.'
+  const { scramble, current } = useScramble(text)
+  scramble()
+</script>
+
 <template>
   <div>
-    <p>This is my portfolio. The content does not yet exist.</p>
+    <p>{{ current }}</p>
   </div>
 </template>

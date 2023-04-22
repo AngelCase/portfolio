@@ -1,17 +1,10 @@
-<script setup>
-  const text = 'hello'
-  const { scramble, current } = useScramble(text)
-</script>
-
 <template>
   <div>
     <header>
       <nav :class="$style.nav">
         <ul :class="$style.list">
-          <li @mouseover="scramble()" :class="$style.list__item">
-            <nuxt-link :class="$style.list__item__link" to="/">
-              {{ current }}
-            </nuxt-link>
+          <li :class="$style.list__item">
+            <nuxt-link :class="$style.list__item__link" to="/"> top </nuxt-link>
           </li>
           <li :class="$style.list__item">
             <nuxt-link :class="$style.list__item__link" to="/skills"
