@@ -1,6 +1,6 @@
 <script setup>
   const text = 'This is my portfolio. The content does not yet exist.'
-  const { scramble, current } = useScramble(text)
+  const { scramble, current } = useHackScramble(text)
   scramble()
 </script>
 

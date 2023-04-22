@@ -1,9 +1,7 @@
-export function useScramble(initStr: string) {
-  const RANDOM_CHARS = '<>-_\\/[]{}=+*^#'
-  const WAIT = 30
-  const RANDOM_LEN = 2
+import { ScrambleProps } from '~~/types/scrambleProps'
 
-  const target = initStr
+export function useScramble(props: ScrambleProps) {
+  const target = props.initStr
   const current = ref(target)
   let isRunning = false
   let index = 0
@@ -25,9 +23,8 @@ export function useScramble(initStr: string) {
 
       // ランダム文字列を生成
       let randomPart = ''
-      for (let i = 0; i < RANDOM_LEN; i++)
-        randomPart +=
-          RANDOM_CHARS[Math.floor(Math.random() * RANDOM_CHARS.length)]
+      for (let i = 0; i < props.randomLength; i++)
+        randomPart += getRandomChar(props.randomChars)
 
       // 表示する文字列を更新
       current.value = targetpart + randomPart
@@ -41,8 +38,12 @@ export function useScramble(initStr: string) {
     }
 
     // 一定時間ごとに文字列を更新
-    const timerId = setInterval(update, WAIT)
+    const timerId = setInterval(update, props.wait)
   }
 
   return { scramble, current }
+}
+
+function getRandomChar(chars: string): string {
+  return chars[Math.floor(Math.random() * chars.length)]
 }
