@@ -34,7 +34,7 @@ export function useScramble(props: ScrambleProps) {
     const timerId = setInterval(update, props.wait)
 
     // 一定時間後に終了
-    const finishTime = props.wait * (target.length + 4) // 全表示し終わってもちょっと待つ
+    const finishTime = props.wait * (target.length + 8) // 全表示し終わってもちょっと待つ
     setTimeout(() => {
       isRunning = false
       clearInterval(timerId)

@@ -8,6 +8,13 @@
 
 <template>
   <div>
-    <h1>{{ current }}</h1>
+    <h1 :class="$style.text">{{ current }}</h1>
   </div>
 </template>
+
+<style lang="scss" module>
+  .text {
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+</style>
