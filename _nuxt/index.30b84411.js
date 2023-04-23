@@ -1,0 +1,1 @@
+import{_ as o}from"./PageHeading.5f38ea5c.js";import{a as n,c as t,o as c}from"./entry.5d30db31.js";const _={};function r(a,s){const e=o;return c(),t(e,{text:"WELCOME TO MY PORTFOLIO"})}const p=n(_,[["render",r]]);export{p as default};
