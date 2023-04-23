@@ -33,7 +33,7 @@
     padding: 10px;
     box-shadow: 0 0 8px #eee;
     &:hover {
-      box-shadow: 0 0 16px #ddd;
+      box-shadow: 0 0 8px #ddd;
     }
 
     &__title {

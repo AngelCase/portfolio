@@ -14,6 +14,7 @@
 
 <style lang="scss" module>
   .text {
+    padding-top: 24px;
     padding-left: 24px;
   }
 </style>

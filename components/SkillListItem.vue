@@ -25,12 +25,12 @@
 
 <style lang="scss" module>
   .mainItem {
-    border-left: solid 2px #ccc;
+    border-left: solid 3px #ccc;
     padding-left: 8px;
   }
 
   .subList {
-    border-left: solid 2px #eee;
+    border-left: solid 2px #d8d8d8;
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: 40px;
