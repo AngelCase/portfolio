@@ -20,6 +20,7 @@
 <style lang="scss" module>
   .description {
     color: #777;
+    font-size: medium;
   }
 
   .contents {

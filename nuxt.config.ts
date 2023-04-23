@@ -13,5 +13,12 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/portfolio/'
   },
-  css: ['assets/reset.css']
+  css: ['assets/reset.css'],
+  modules: ['@nuxtjs/google-fonts'],
+  googleFonts: {
+    families: {
+      Roboto: true,
+      'Bruno+Ace': true
+    }
+  }
 })

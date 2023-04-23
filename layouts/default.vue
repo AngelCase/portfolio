@@ -4,24 +4,24 @@
       <nav :class="$style.nav">
         <ul :class="$style.list">
           <li :class="$style.list__item">
-            <nuxt-link :class="$style.list__item__link" to="/"> top </nuxt-link>
+            <nuxt-link :class="$style.list__item__link" to="/"> TOP </nuxt-link>
           </li>
           <div :class="$style.separator"></div>
           <li :class="$style.list__item">
             <nuxt-link :class="$style.list__item__link" to="/skills"
-              >skills</nuxt-link
+              >SKILLS</nuxt-link
             >
           </li>
           <div :class="$style.separator"></div>
           <li :class="$style.list__item">
             <nuxt-link :class="$style.list__item__link" to="/works">
-              works
+              WORKS
             </nuxt-link>
           </li>
           <div :class="$style.separator"></div>
           <li :class="$style.list__item">
             <nuxt-link :class="$style.list__item__link" to="/contact">
-              contact
+              CONTACT
             </nuxt-link>
           </li>
         </ul>
