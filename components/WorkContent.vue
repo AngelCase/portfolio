@@ -30,11 +30,10 @@
     position: relative;
     margin-bottom: 32px;
     padding: 10px;
-    border-left: solid 2px #e8e8e8;
-    box-shadow: 0 0 8px #eee;
+    border: 2px solid $light-blue;
     &:hover {
-      box-shadow: 0 0 8px #ddd;
-      border-left: solid 2px #aaa;
+      border: 2px solid $sub-blue;
+      border-left: solid 3px $blue;
     }
 
     &__title {

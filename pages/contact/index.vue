@@ -16,7 +16,7 @@
     padding-left: 40px;
 
     &__item {
-      border-left: solid 2px #ccc;
+      border-left: solid 3px $blue;
       background: #fcfcfc;
       margin-bottom: 8px;
       padding-left: 8px;

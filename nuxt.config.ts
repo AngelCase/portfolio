@@ -10,6 +10,15 @@ export default defineNuxtConfig({
       publicDir: '../docs'
     }
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "assets/variable.scss";'
+        }
+      }
+    }
+  },
   app: {
     baseURL: '/portfolio/'
   },

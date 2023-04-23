@@ -38,8 +38,8 @@
   }
 
   .separator {
-    border-left: solid 2px #aaa;
-    height: 16px;
+    border-left: solid 2px $blue;
+    height: 24px;
   }
 
   .list {
@@ -61,7 +61,7 @@
       }
 
       a:hover {
-        background-color: #efefef;
+        background-color: $light-blue;
       }
 
       &__link,
