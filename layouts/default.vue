@@ -34,7 +34,7 @@
 <style lang="scss" module>
   .nav {
     margin-top: 24px;
-    margin-left: 24px;
+    margin-left: 4px;
   }
 
   .separator {
