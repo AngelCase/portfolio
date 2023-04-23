@@ -31,9 +31,10 @@
     margin-bottom: 32px;
     padding: 10px;
     border: 2px solid $light-blue;
+    border-left: 4px solid $light-blue;
     &:hover {
       border: 2px solid $sub-blue;
-      border-left: solid 3px $blue;
+      border-left: solid 4px $blue;
     }
 
     &__title {
