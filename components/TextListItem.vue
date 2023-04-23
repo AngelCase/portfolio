@@ -15,10 +15,10 @@
       {{ mainText }}
     </li>
     <ul :class="$style.subList" v-for="subItem in props.subItems">
-      <SkillSubListItem
+      <TextSubListItem
         :class="$style.subList__item"
         :text="subItem"
-      ></SkillSubListItem>
+      ></TextSubListItem>
     </ul>
   </div>
 </template>
