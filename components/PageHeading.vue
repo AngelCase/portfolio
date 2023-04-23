@@ -14,6 +14,6 @@
 
 <style lang="scss" module>
   .text {
-    text-align: center;
+    padding-left: 24px;
   }
 </style>
