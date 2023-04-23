@@ -28,12 +28,12 @@
 <style lang="scss" module>
   .content {
     position: relative;
-    border-radius: 10px;
     margin-bottom: 32px;
     padding: 10px;
-    box-shadow: 0 0 8px #eee;
+    border: 2px solid $light-blue;
     &:hover {
-      box-shadow: 0 0 8px #ddd;
+      border: 2px solid $sub-blue;
+      border-left: solid 3px $blue;
     }
 
     &__title {

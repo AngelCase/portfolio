@@ -2,7 +2,7 @@ import { ScrambleProps } from '~~/types/scrambleProps'
 
 export function useScramble(props: ScrambleProps) {
   const target = props.initStr
-  const current = ref(target)
+  const current = ref('')
   let isRunning = false
   let index = 0
 

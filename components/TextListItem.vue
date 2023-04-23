@@ -15,22 +15,22 @@
       {{ mainText }}
     </li>
     <ul :class="$style.subList" v-for="subItem in props.subItems">
-      <SkillSubListItem
+      <TextSubListItem
         :class="$style.subList__item"
         :text="subItem"
-      ></SkillSubListItem>
+      ></TextSubListItem>
     </ul>
   </div>
 </template>
 
 <style lang="scss" module>
   .mainItem {
-    border-left: solid 3px #ccc;
+    border-left: solid 3px $blue;
     padding-left: 8px;
   }
 
   .subList {
-    border-left: solid 2px #d8d8d8;
+    border-left: solid 2px $sub-blue;
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: 40px;

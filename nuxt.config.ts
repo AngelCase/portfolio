@@ -10,8 +10,24 @@ export default defineNuxtConfig({
       publicDir: '../docs'
     }
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "assets/variable.scss";'
+        }
+      }
+    }
+  },
   app: {
     baseURL: '/portfolio/'
   },
-  css: ['assets/reset.css']
+  css: ['assets/reset.css'],
+  modules: ['@nuxtjs/google-fonts'],
+  googleFonts: {
+    families: {
+      Roboto: true,
+      'Bruno+Ace': true
+    }
+  }
 })
