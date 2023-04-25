@@ -1,7 +1,10 @@
 <script setup>
   const props = defineProps({
     title: String,
-    url: String
+    url: String,
+    image: String,
+    imageAlt: String,
+    imageBorder: Boolean
   })
 
   const { scramble, current: title } = useHackScramble(props.title)
@@ -14,18 +17,23 @@
       {{ title }}
     </h2>
     <img
-      src="~/assets/img/monochro.gif"
-      alt="MONOCHROゲーム画面"
+      :class="props.imageBorder ? $style.imageBorder : ''"
+      :src="props.image"
+      :alt="props.imageAlt"
       width="320"
       height="240"
       loading="lazy"
     />
-    <slot :class="$style.content__description"></slot>
+    <slot></slot>
     <a :class="$style.content__link" :href="url"></a>
   </div>
 </template>
 
 <style lang="scss" module>
+  .imageBorder {
+    border: solid 1px #ddd;
+  }
+
   .content {
     position: relative;
     margin-bottom: 32px;
